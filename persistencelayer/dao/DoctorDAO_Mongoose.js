@@ -5,6 +5,7 @@ const IDoctorDAO = require('./IDoctorDAO.js');
 const Doctor = require('../models/Doctor');
 
 
+
 class DoctorDAO_Mongoose extends IDoctorDAO {
 
   constructor() {
@@ -14,7 +15,6 @@ class DoctorDAO_Mongoose extends IDoctorDAO {
       useUnifiedTopology: true
     }).then(() => {
       console.log('Conectamos com Sucesso')
-      app.listen(3000)
     }).catch((err) => console.log(err))
   }
   async create(req) {

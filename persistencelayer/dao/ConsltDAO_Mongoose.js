@@ -14,7 +14,6 @@ class ConsltDAO_Mongoose extends IConsltDAO {
       useUnifiedTopology: true
     }).then(() => {
       console.log('Conectamos com Sucesso')
-      app.listen(3000)
     }).catch((err) => console.log(err))
   }
   async create(req) {
