@@ -1,4 +1,4 @@
-class IUserDAO{
+class IPersonDAO{
 
    constructor(){}
      create(){}  
@@ -7,4 +7,4 @@ class IUserDAO{
      delete(){} 
      search(){}
 }
-module.exports = IUserDAO;
+module.exports = IPersonDAO;

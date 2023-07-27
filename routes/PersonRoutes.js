@@ -10,13 +10,13 @@ const app = express();
 
 
 const config = require('../config.js');
-let UserController = require('../controllers/'+config.IUserController);
+let PersonController = require('../controllers/'+config.IPersonController);
 
-let userController = new UserController();
+let personController = new PersonController();
 
 
 
-class UserRoutes extends IRoutes{
+class PersonRoutes extends IRoutes{
 
   constructor() {   
     super();
@@ -30,17 +30,17 @@ app.use(express.static('public'));
       app.get('/', (req, res) => {
       res.send('Rest API com Polimorfismo');
       });
-      app.get('/user', userController.show);
+      app.get('/Person', personController.show);
 
-      app.get('/user/search', userController.index)
+      app.get('/Person/search', personController.index)
       
-// lista user, filtrando por email
-// ex: /user/buscaemail/?email=vaguetti@gmail.com
+// lista Person, filtrando por email
+// ex: /Person/buscaemail/?email=vaguetti@gmail.com
 //=========================
   }
   post(){
-    app.post('/user', userController.store);
-// lista user
+    app.post('/Person', personController.store);
+// lista Person
   }
 
   listen(){
@@ -48,4 +48,4 @@ app.use(express.static('public'));
      }
 
 }
-module.exports = UserRoutes;
+module.exports = PersonRoutes;

@@ -1,7 +1,7 @@
 const config = {
   
-  "IRoutes" : "UserRoutes.js",
-  "IUserController" : "UserController.js",
-  "IUserDAO" : "UserDAO_Mongoose.js"
+  "IRoutes" : "PersonRoutes.js",
+  "IPersonController" : "PersonController.js",
+  "IPersonDAO" : "PersonDAO_Mongoose.js"
 };
 module.exports = config;
