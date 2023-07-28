@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const ConsltSchema = new mongoose.Schema(
     {
-      dataConslt: String,
-      hrConslt: String
+      dataConslt: Date,
+      hrConslt: Date
     }
 );
 

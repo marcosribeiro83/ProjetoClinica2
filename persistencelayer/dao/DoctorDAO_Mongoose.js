@@ -10,7 +10,7 @@ class DoctorDAO_Mongoose extends IDoctorDAO {
 
   constructor() {
     super();
-    mongoose.connect('mongodb+srv://boss:Siriqueijo@myclusterclinica.efiiivs.mongodb.net/?retryWrites=true&w=majority', {
+    mongoose.connect('mongodb+srv://root:root@myclusterclinica.efiiivs.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     }).then(() => {
